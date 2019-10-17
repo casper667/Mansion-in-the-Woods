@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Oculus/SampleFramework/Usage/CustomHands.meta
 guid: 9f27ae35e9c6a864a9658954416bfc75
+=======
+guid: dfcbd60232f4a6f4f979d027707c0cd2
+>>>>>>> edf5bd891e0f76dc2cf4f824103fc6bd749b87d7:Assets/PreFabs.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
