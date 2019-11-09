@@ -26,6 +26,11 @@ ExportedObj/
 
 # Unity3D generated meta files
 *.pidb.meta
+*.meta
+
+#VR files
+*OVRPlugin.*
+*.vrmanifest
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
