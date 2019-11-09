@@ -5,46 +5,56 @@ using UnityEngine.SceneManagement;
 
 public class ManageGame : MonoBehaviour
 {
+	public GameObject start;
+ 	public GameObject player = null;
+	public string nextScene = "Outside";
 
-  public GameObject start;
-  public GameObject player = null;
-
-  // Start is called before the first frame update
-  void Start()
-  {
-    start = GameObject.FindWithTag("Start");
-    
-    if (SceneManager.GetActiveScene().name == "Master")
-      SceneManager.SetActiveScene(SceneManager.GetSceneByName("Title"));
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-    if (player == null && SceneManager.GetActiveScene().name == "Outside")
-    {
-      player = GameObject.FindWithTag("Player");
-    }
-    if (player != null)
-    {
-      print("Found~!");
+  	// Start is called before the first frame update
+  	void Start()
+  	{
+		//Find start button on title screen
+		start = GameObject.FindWithTag("Start");
+		DontDestroyOnLoad(this.gameObject);
     }
 
-    if (start != null)
-    {
-      //print(start.gameObject.GetComponent<StartGame>().GetChange());
-      if (start.gameObject.GetComponent<StartGame>().GetChange())
-      {
-        ChangeScene("Outside");
-      }
-    }
+  	// Update is called once per frame
+  	void Update()
+  	{
+		if (player == null && SceneManager.GetActiveScene().name == "Outside"){
+			player = GameObject.FindWithTag("Player"); 
+		}
 
-  }
+		if(Input.GetKeyDown(KeyCode.Return)){
+			switch(SceneManager.GetActiveScene().name){
+				case "Title":
+					nextScene = "Outside";
+					break;
+				case "Outside":
+					nextScene = "PatrolDemo";
+					break;
+				case "PatrolDemo":
+					nextScene = "SecondFloor";
+					break;
+                case "SecondFloor":
+                    nextScene = "Title";
+                    break;
+            }
+			ChangeScene(nextScene);
+		}
+
+		if (start != null){
+			//print(start.gameObject.GetComponent<StartGame>().GetChange());
+			if (start.gameObject.GetComponent<StartGame>().GetChange()){
+				ChangeScene("Outside");
+				start = null;
+			}
+		}
+  	}
 
     public void ChangeScene(string name)
     {
-      if(SceneManager.GetActiveScene().name == "Title")
-        SceneManager.UnloadSceneAsync(sceneName: "Title");
-      SceneManager.LoadSceneAsync(sceneName: name);
+		SceneManager.UnloadSceneAsync(sceneName: SceneManager.GetActiveScene().name);
+		SceneManager.LoadScene(sceneName: name);
     }
+
 }

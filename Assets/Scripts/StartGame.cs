@@ -20,10 +20,10 @@ public class StartGame : MonoBehaviour
     {
       //print(gameObject.GetComponent<Button>().);
       OVRInput.Update();
-      if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) || Input.GetKeyDown("space"))
+      if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
       {
         Debug.Log("Button Down");
-         SetChange(true);
+        SetChange(true);
       }
     }
 
