@@ -17,7 +17,7 @@ public class skeletonChase : MonoBehaviour
     float accuracyWP = 5.0f;
 
     //to get a hold of our healthbar
-    public Slider healthbar;
+    //public Slider healthbar;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +28,13 @@ public class skeletonChase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* removed the health bar from our enemy skeleton
         if(healthbar.value <= 0) //if the skeleton is dead
         {
             return; //cease all function in the ai script (so it lays dead)
             //we probably want to call a death function
         }
+        */
 
         Vector3 direction = player.position - this.transform.position;
         direction.y = 0;
@@ -60,7 +62,7 @@ public class skeletonChase : MonoBehaviour
             this.transform.Translate(0, 0, Time.deltaTime * speed);
         }
 
-        if (Vector3.Distance(player.position, this.transform.position) < 10 && (angle < 60 || state == "pursuing")) 
+        if (Vector3.Distance(player.position, this.transform.position) < 10 && (angle < 60 || state == "pursuing")) //what is pursuing?
             {
                 state = "pursuing";
             this.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotSpeed * Time.deltaTime);
