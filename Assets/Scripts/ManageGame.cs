@@ -24,7 +24,8 @@ public class ManageGame : MonoBehaviour
 			player = GameObject.FindWithTag("Player"); 
 		}
 
-		if(Input.GetKeyDown(KeyCode.Return)){
+		if(OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+        {
 			switch(SceneManager.GetActiveScene().name){
 				case "Title":
 					nextScene = "Outside";
