@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 943f3c476130c4f4f8ae55ef3ccd38ba
-=======
-guid: 4600a0264e6e91f44bce273bdca8a41d
->>>>>>> 592b96167661bf2087233a5aa30b65d34ac352c4
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -31,13 +27,8 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-<<<<<<< HEAD
   textureFormat: -1
   maxTextureSize: 1024
-=======
-  textureFormat: 1
-  maxTextureSize: 2048
->>>>>>> 592b96167661bf2087233a5aa30b65d34ac352c4
   textureSettings:
     serializedVersion: 2
     filterMode: -1
@@ -69,11 +60,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-<<<<<<< HEAD
     maxTextureSize: 1024
-=======
-    maxTextureSize: 2048
->>>>>>> 592b96167661bf2087233a5aa30b65d34ac352c4
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1

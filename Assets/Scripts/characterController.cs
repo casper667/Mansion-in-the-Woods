@@ -24,9 +24,6 @@ public class characterController : MonoBehaviour
     {
         if (healthbar.value <= 0) //if the skeleton is dead
         {
-            //set the fill color the same as the background color
-            healthbar.gameObject.transform.Find("Fill Area").Find("Fill").GetComponent<Image>().color = Color.red; //will this work?
-
             return; //cease all function in the ai script (so it lays dead)
             //we probably want to call a death function
         }
