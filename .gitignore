@@ -27,11 +27,6 @@ ProjectSettings/*
 #Exclude certain Assets
 /Assets/AssetStoreTools*
 
-#VR files
-*OVRPlugin.*
-*.vrmanifest
-Assets/SteamVR_Resources/Resources/SteamVR_Settings.*
-
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
