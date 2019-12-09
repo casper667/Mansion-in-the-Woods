@@ -17,7 +17,7 @@ public class skeletonChase : MonoBehaviour
     float accuracyWP = 5.0f;
 
     //to get a hold of our healthbar
-    //public Slider healthbar;
+    public Slider healthbar;
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +28,13 @@ public class skeletonChase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /* removed the health bar from our enemy skeleton
+        //removed the health bar from our enemy skeleton
         if(healthbar.value <= 0) //if the skeleton is dead
         {
             return; //cease all function in the ai script (so it lays dead)
             //we probably want to call a death function
         }
-        */
+        
 
         Vector3 direction = player.position - this.transform.position;
         direction.y = 0;
