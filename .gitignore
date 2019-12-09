@@ -21,17 +21,11 @@ ExportedObj/
 *.booproj
 *.svd
 
-
-# Unity3D generated meta files
-*.pidb.meta
-*.meta
-
 #ProjectSettings
 ProjectSettings/*
 
 #Exclude certain Assets
 /Assets/AssetStoreTools*
-/Assets/Flooded_Grounds/*
 
 #VR files
 *OVRPlugin.*
