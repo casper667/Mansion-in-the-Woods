@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.mansioninthewoods.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "E:\\Unity\\Mansion-in-the-Woods\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\gener\\Documents\\GitHub\\Mansion-in-the-Woods\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Mansion in the Woods [Testing]"

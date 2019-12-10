@@ -24,16 +24,21 @@ public class ManageGame : MonoBehaviour
 			player = GameObject.FindWithTag("Player"); 
 		}
 
-		if(OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+        //Debug.Log("");
+        // OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger)
+        //if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+        if (Input.GetKeyDown("s"))
         {
-			switch(SceneManager.GetActiveScene().name){
+            Debug.Log("s Pressed");
+
+            switch (SceneManager.GetActiveScene().name){
 				case "Title":
 					nextScene = "Outside";
 					break;
 				case "Outside":
-					nextScene = "PatrolDemo";
+					nextScene = "GTest";
 					break;
-				case "PatrolDemo":
+				case "GTest":
 					nextScene = "SecondFloor";
 					break;
                 case "SecondFloor":

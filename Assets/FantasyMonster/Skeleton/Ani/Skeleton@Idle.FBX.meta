@@ -83,7 +83,6 @@ ModelImporter:
     400074: Object01
     400076: Object02
     400078: //RootNode
-<<<<<<< HEAD
     4300000: Object02
     4300002: Object01
     7400000: Idle
@@ -96,25 +95,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: defaultsds
     second: {fileID: 2100000, guid: b1494958bf9856a479bec1767c02878e, type: 2}
-=======
-    2100000: defaultsds
-    4300000: Object02
-    4300002: Object01
-    7400000: Take 001
-    9500000: //RootNode
-    13700000: Object01
-    13700002: Object02
-  externalObjects: {}
->>>>>>> a420576399a3f9ba7c35656be5ce8826f34d25a4
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-<<<<<<< HEAD
     materialLocation: 0
-=======
-    materialLocation: 1
->>>>>>> a420576399a3f9ba7c35656be5ce8826f34d25a4
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -136,7 +121,6 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-<<<<<<< HEAD
     clipAnimations:
     - serializedVersion: 16
       name: Idle
@@ -177,20 +161,6 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
-=======
-    clipAnimations: []
-    isReadable: 1
-  meshes:
-    lODScreenPercentages: []
-    globalScale: 1
-    meshCompression: 0
-    addColliders: 0
-    useSRGBMaterialColor: 1
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
->>>>>>> a420576399a3f9ba7c35656be5ce8826f34d25a4
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -198,35 +168,20 @@ ModelImporter:
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-<<<<<<< HEAD
     indexFormat: 1
-=======
-    indexFormat: 0
->>>>>>> a420576399a3f9ba7c35656be5ce8826f34d25a4
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< HEAD
     useFileScale: 0
     previousCalculatedGlobalScale: 0.01
-=======
-    useFileScale: 1
-    previousCalculatedGlobalScale: 0.0254
->>>>>>> a420576399a3f9ba7c35656be5ce8826f34d25a4
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-<<<<<<< HEAD
     tangentImportMode: 4
     normalCalculationMode: 0
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
-=======
-    tangentImportMode: 3
-    normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
->>>>>>> a420576399a3f9ba7c35656be5ce8826f34d25a4
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   importAnimation: 1
@@ -245,19 +200,11 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
-<<<<<<< HEAD
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 1
-=======
-    skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
-  humanoidOversampling: 1
-  additionalBone: 0
->>>>>>> a420576399a3f9ba7c35656be5ce8826f34d25a4
   userData: 
   assetBundleName: 
   assetBundleVariant: 
